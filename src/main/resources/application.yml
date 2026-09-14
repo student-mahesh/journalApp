@@ -1,0 +1,21 @@
+
+#spring.data.mongodb.database=journaldb
+#spring.data.mongodb.auto-index-creation=true
+#server.path=8081
+#server.servlet.context-path=/journal
+
+spring:
+  profiles:
+    active: dev
+
+#  logging:
+#    level:
+##      root: ERROR          # this when  the error from all the apllication like mongodb,Spring, MongoDB, Tomcat, whant to work on that
+#      com.edigest.journalApp: ERROR      # Only ERROR logs from your package. if youwant to work
+
+
+#  logging:
+#    level:
+#      com.edigest.journalApp:
+#        service:
+#          UserService: OFF      #  if you want particular file log    ---> OFF  then you can
