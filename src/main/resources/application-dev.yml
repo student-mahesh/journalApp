@@ -12,7 +12,7 @@ spring:
 
 
 server:
-  path: 8080
+  port: 8080
   servlet:
     context-path: /journal
 
