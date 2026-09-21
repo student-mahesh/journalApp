@@ -3,6 +3,8 @@ import com.edigest.journalApp.Service.JournalEntryservice;
 import com.edigest.journalApp.Service.UserService;
 import com.edigest.journalApp.entity.JournalEntry;
 import com.edigest.journalApp.entity.User;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -17,6 +19,7 @@ import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/journal")
+@Tag(name="Journal APIs")
 public class JournelEntryControllerV2 {
 
     @Autowired
@@ -25,7 +28,7 @@ public class JournelEntryControllerV2 {
     private UserService userService;
 
     @GetMapping
-
+    @Operation(summary="Get all journal entry of the users ")
     public ResponseEntity<List> getAllJournalEntriesOfUser(){
         Authentication authentication= SecurityContextHolder.getContext().getAuthentication();
         String userName=authentication.getName();

@@ -14,8 +14,9 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 import org.slf4j.Logger;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 @Slf4j
 public class UserService
 {

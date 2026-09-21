@@ -8,6 +8,9 @@ spring:
   profiles:
     active: dev
 
+
+
+
 #  logging:
 #    level:
 ##      root: ERROR          # this when  the error from all the apllication like mongodb,Spring, MongoDB, Tomcat, whant to work on that
